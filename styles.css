@@ -1,0 +1,1024 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+}
+
+body {
+    background: var(--body-color);
+}
+
+html::-webkit-scrollbar {
+    width: 0.1rem;
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--text-color);
+}
+
+/* Variable */
+:root {
+    --main-color: #fff;
+    --text-color: #D36A55;
+    --body-color: #000;
+}
+
+/* NAV */
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+section {
+    padding: 3rem 0 2rem;
+}
+
+img {
+    width: 100%;
+}
+
+.bx {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1068px;
+    margin: auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--main-color);
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 10%;
+    background: var(--main-color);
+}
+
+.navbar {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 18px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.1rem;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--main-color);
+    transition: 0.5s;
+}
+
+.nav-link:hover,
+.nav-active {
+    color: var(--text-color);
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.nav-link .bx {
+    font-size: 1.9rem;
+}
+
+.nav-link-title{
+    font-size: 0.7rem;
+}
+
+/* HOME */
+.home {
+    position: relative;
+    min-height: 470px;
+    display: flex;
+    margin-top: 5rem !important;
+    border-radius: 0.5rem;
+}
+
+.home-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.home-text {
+    padding-left: 20rem;
+    padding-top: 15rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.home-text h1 {
+    font-size: 5rem;
+}
+
+.home-title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.home-title p {
+    margin: 10px 0 20px;
+}
+
+/* NEWS */
+.news {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    background: var(--main-color);
+    padding: 8px 14px;
+    border: 1px solid hsl(200 100% 99% /5%);
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.news h2 {
+    font-size: 1.5rem;
+}
+
+.news-main {
+    padding-top: 2rem;
+    cursor: pointer;
+}
+
+.news-title {
+    color: var(--text-color);
+}
+
+.news-title a {
+    color: var(--text-color);
+}
+
+.news-date {
+    padding-top: 1rem;
+}
+
+.news-date a {
+    color: var(--text-color);
+    opacity: 0.7;
+}
+
+.news-gate {
+    padding-top: 2rem;
+    opacity: 0.5;  
+}
+
+/* NEW RELEASE */
+.release {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    background: var(--main-color);
+    padding: 8px 14px;
+    border: 1px solid hsl(200 100% 99% /5%);
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;        
+}
+
+.release-album {
+    transform: translateX(36%);
+    width: 616px;
+    height: 616px;
+}
+
+.release-btn {
+    padding-top: 2rem;
+    transition: 0.5s;
+}
+
+.release-btn button {
+    transform: translateX(280%);
+    width: 15%;
+    height: 10%;
+    padding: 0.5rem 0 0.5rem 0; 
+    border-radius: 2rem;
+    cursor: pointer;
+    background: none;
+    border: 1px solid var(--main-color);
+    transition: 0.5s;
+}
+
+.release-btn p {
+    color: var(--text-color);
+}
+
+.release-btn button:hover {
+    background: var(--text-color);
+}
+
+.release-btn p:hover {
+    color: var(--body-color);
+}
+
+/* PROFILE HOME */
+.profile-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    background: var(--main-color);
+    padding: 8px 14px;
+    border: 1px solid hsl(200 100% 99% /5%);
+    border-radius: 0.5rem;
+    margin-bottom: 2rem; 
+}
+
+.profileHome-image {
+    transform: translateX(36%);
+    width: 616px;
+    height: 100%;
+}
+
+.profileHome-btn {
+    padding-top: 2rem;
+    transition: 0.5s;
+}
+
+.profileHome-btn button {
+    transform: translateX(280%);
+    width: 15%;
+    height: 10%;
+    padding: 0.5rem 0 0.5rem 0; 
+    border-radius: 2rem;
+    cursor: pointer;
+    background: none;
+    border: 1px solid var(--main-color);
+    transition: 0.5s;
+}
+
+.profileHome-btn p {
+    color: var(--text-color);
+}
+
+.profileHome-btn button:hover {
+    background: var(--text-color);
+}
+
+.profileHome-btn p:hover {
+    color: var(--body-color);
+}
+
+/* SOSMED */
+.sosmed {
+    padding-top: 3rem;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sosmed a {
+    height: 50px;
+    width: 50px;
+    margin: 0 1.5rem 1.5rem;
+}
+
+.sosmed img {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.sosmed img:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+
+
+/* ALBUM */
+.album {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--main-color);
+    padding: 8px 14px;
+    border: 1px solid hsl(200 100% 99% /5%);
+    border-radius: 0.5rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.heading-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.album-box {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    overflow: hidden;
+    color: var(--text-color);
+}
+
+.album-box-img {
+    object-fit: cover;
+    width: 100%;
+    height: 70%;
+}
+
+.album-box .album-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 14px;
+    text-align: center;
+    background: linear-gradient(
+        8deg,
+        hsl(240 17% 14% / 74%) 14,
+        hsl(240 17% 14% / 74%) 44%
+    );
+    overflow: hidden;
+}
+
+.album-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.swiper-btn {
+    display: flex;
+}
+
+.swiper-button-next, 
+.swiper-button-prev {
+    position: flex !important;
+    padding-bottom: 3rem;
+}
+
+.swiper-button-next::after, 
+.swiper-button-prev::after {
+    color: var(--main-color);
+    font-size: 20px !important;
+    font-weight: 1000;
+}
+
+/* DISCOGRAPHY */
+.discography {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.disco-title {
+    padding-top: 3rem;
+    color: var(--text-color);
+    font-size: 4rem;
+}
+
+.disco-card {
+    padding-top: 4rem;
+}
+
+.disco-main {
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    line-height: 20px;
+}
+
+.disco-box {
+    position: relative;
+    width: 30%;
+}
+
+.disco-text {
+    color: var(--text-color);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.6;
+}
+
+.disco-text a {
+    color: var(--text-color);
+}
+
+.disco-text button {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    padding: 8rem 7rem 8rem 7rem;
+    background: none;
+    border: none;   
+    color: var(--text-color);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.disco-text:hover {
+    opacity: 1;
+}
+
+.disco-box-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* BACK BTN */
+
+.back {
+    width: 100%;
+    height: 100%;
+    padding: 6rem 0 0 0;
+}
+
+.back-link {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* DISCO TITLE */
+.detail {
+    display: flex;
+    color: var(--text-color);
+}
+
+.detail-img {
+    width: 50%;
+    height: 50%;
+}
+
+.detail-content {
+    width: 70%;
+    padding-left: 3rem;
+}
+
+.detail-title {
+    font-size: 2.5rem;  
+    padding-bottom: 2rem;
+}
+
+/* MV */
+.mv-heading {
+    padding-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+.mv-heading h2 {
+    font-size: 3rem;
+}
+
+.mv-video {
+    padding-top: 3rem;
+    justify-content: center;
+    display: flex;
+}
+
+.mv-content {
+    padding-top: 1rem;
+    justify-content: center;
+    display: flex;
+}
+
+.mv-content a {
+    color: var(--text-color);
+}
+
+/* TRACK */
+.track-heading {
+    padding-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+.track-heading h2 {
+    font-size: 3rem;
+}
+
+.track-content {
+    padding-top: 6rem;
+    color: var(--text-color);
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 8rem;
+}
+
+/* PROFILE */
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    padding-top: 7rem;
+    font-size: 1.5rem;
+}
+
+.profile-image {
+    padding-top: 2rem;
+    transform: translateX(36%);
+    width: 616px;
+    height: 100%;
+}
+
+
+/* MEMBER CARD PROFILE */
+
+.main-member-card {
+    display: flex;
+}
+
+.member-card {
+    height: 100%;   
+    color: var(--text-color);
+    justify-content: center;    
+    margin-right: 1rem;
+    transition: 0.5s;
+}
+
+.member-card-img {
+    justify-content: center;
+    display: flex;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.member-card p {
+    padding-top: 0.2rem;
+    font-size: 1.5rem;
+}
+
+.member-card:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+/* FOOTER */
+.footer {
+    color: var(--main-color );
+}
+
+.footer-text {
+    max-width: 1068px;
+    margin: auto;
+    padding-top: 2rem;
+    font-size: 0.7rem;
+}
+
+/* RESPONSIF */
+
+
+/* 1170px */
+@media (max-width: 1170px) {
+    .navbar {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: auto;
+        transform: translateY(0);
+        flex-direction: row;
+        justify-content: space-evenly;
+        row-gap: 1px;
+        padding: 10px;
+        border-top: 1px solid hsl(200 100% 99% / 5%);
+        background: linear-gradient(
+            8deg, 
+            hsl(240 17% 14% / 100%) 5%,
+            hsl(240 17% 14% / 90%) 100%
+        ); 
+    }
+    .nav-link .bx {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* 1060px */
+@media (max-width: 1060px) {
+    .container {
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    .home-text {
+        margin: auto;
+        width: 95%;
+        transform: translateX(-17%);
+    }
+}
+
+/* 768px */
+@media (max-width: 768px) {
+    html::-webkit-scrollbar {
+        width: 0rem;
+        background: transparent;
+    }
+
+    .container {
+        margin: 0 auto;
+        width: 80%;
+    } 
+
+    .home-text {
+        margin: auto;
+        width: 95%;
+        transform: translateX(-28%);
+    }
+
+    .home-text h1 {
+        font-size: 2rem;
+    }
+
+    .home-text p {
+        font-size: 0.8rem;
+    }
+
+    .heading-title {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .heading h2 {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    /* NEWS RESPONSIF */
+    .news-title h4 {
+        font-size: 0.8rem;
+    }
+
+    .news-date a {
+        font-size: 0.7rem;
+    }
+
+    /* NEW RELEASE RESPONSIF */
+    .release-album {
+        transform: translateX(8%);
+        width: 515px;
+        height: 515px;
+    }
+
+    /* PROFILE RESPONSIF */
+    .profileHome-image {
+        transform: translateX(8%);
+        width: 515px;
+        height: 90%;
+    }
+
+    /* SOSMED RESPONSIF */
+    .sosmed {
+        padding-top: 3rem;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transform: translateX(-2%);
+    }
+    
+    .sosmed a {
+        height: 40px;
+        width: 40px;
+        margin: 0 1rem 1rem;
+    }
+
+    /* FOOTER RESPONSIF */
+    .footer-text {
+        padding-bottom: 4rem;
+        margin-left: 8rem;
+        opacity: 0.8;
+    }
+
+    /* ALBUM SLIDE RESPONSIF */
+
+    /* DISCO */
+    .disco-card {
+        padding-top: 2rem;
+    }
+
+    .disco-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .disco-box {
+        transform: translateX(45%);
+        width: 50%;
+        height: 50%;
+    }
+
+    .disco-text button {
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        padding: 7.5rem 6.5rem 7.5rem 6.5rem;
+        background: none;
+        border: none;
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+
+    /* PROFILE RESPONSIF */
+    .heading .profile-title {
+        font-size: 2.5rem;
+    }
+
+    .profile-image {
+        padding-top: 2rem;
+        transform: translateX(8%);
+        width: 515px;
+        height: 80%;
+    }
+
+    /* MEMBER RESPONSIF */
+    .main-member-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .member-card-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .member-card {
+        transform: translateX(70%);
+        width: 40%;
+        height: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .member-card:hover {
+        transition: 0.5s;
+        transform: translateX(70%) scale(1.05);
+    }
+    
+    /* DISCO DETAIL */
+    .back-link {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    
+    .detail {
+        flex-direction: column;
+    }
+
+    .detail-img {
+        transform: translateX(12%);
+        width: 80%;
+        height: 80%;
+    }
+
+    .mv-video iframe {
+        width: 500px;
+        height: 250px;
+    }
+
+    .detail-title {
+        padding-top: 3rem;
+        display: flex;
+        justify-content: center;
+        transform: translateX(20%);
+    }
+
+    .detail-desc {
+        text-align: center;
+        font-size: 0.9rem;
+        justify-content: center;
+        transform: translateX(18%);
+    }
+
+}
+
+/* 576px */
+@media (max-width: 576px) {
+    html::-webkit-scrollbar {
+        width: 0rem;
+        background: transparent;
+    }
+
+    .container {
+        margin: 0 auto;
+        width: 90%;
+    } 
+
+    .home-text {
+        margin: auto;
+        width: 100%;
+        transform: translateX(-34%);
+    }
+
+    .home-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .home-text p {
+        font-size: 0.8rem;
+    }
+
+    .heading-title {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .heading h2 {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    /* NEWS RESPONSIF */
+    .news-title h4 {
+        font-size: 0.8rem;
+    }
+
+    .news-date a {
+        font-size: 0.7rem;
+    }
+
+    /* NEW RELEASE RESPONSIF */
+    .release-album {
+        transform: translateX(4%);
+        width: 414px;
+        height: 414px;
+    }
+
+    /* PROFILE RESPONSIF */
+    .profileHome-image {
+        transform: translateX(4%);
+        width: 414px;
+        height: 90%;
+    }
+
+    /* SOSMED RESPONSIF */
+    .sosmed {
+        padding-top: 2rem;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transform: translateX(-1%);
+    }
+    
+    .sosmed a {
+        height: 30px;
+        width: 30px;
+        margin: 0 0.7rem 0.7rem;
+    }
+
+
+    /* FOOTER RESPONSIF */
+    .footer-text {
+        padding-bottom: 4rem;
+        margin-left: 4rem;
+        opacity: 0.8;
+    }
+
+    /* ALBUM SLIDE RESPONSIF */
+
+    /* DISCO */
+    .disco-card {
+        padding-top: 2rem;
+    }
+
+    .disco-main {
+        display: flex;
+    }
+
+    .disco-box {
+        justify-content: center;
+        width: 50%;
+    }
+
+    .disco-title {
+        font-size: 3rem;
+    }
+
+    .disco-text button {
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        padding: 7.5rem 6.5rem 7.5rem 6.5rem;
+        background: none;
+        border: none;
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+
+    /* PROFILE RESPONSIF */
+    .heading .profile-title {
+        font-size: 2.5rem;
+    }
+
+    .profile-image {
+        padding-top: 2rem;
+        transform: translateX(5%);
+        width: 414px;
+        height: 80%;
+    }
+
+    /* MEMBER RESPONSIF */
+    .main-member-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .member-card-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .member-card {
+        transform: translateX(70%);
+        width: 40%;
+        height: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .member-card:hover {
+        transition: 0.5s;
+        transform: translateX(70%) scale(1.05);
+    }
+    
+    /* DISCO DETAIL */
+    .back-link {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    
+    .detail {
+        flex-direction: column;
+    }
+
+    .detail-img {
+        transform: translateX(12%);
+        width: 80%;
+        height: 80%;
+    }
+
+    .mv-video iframe {
+        width: 400px;
+        height: 250px;
+    }
+
+    .detail-title {
+        padding-top: 3rem;
+        display: flex;
+        justify-content: center;
+        transform: translateX(17%);
+    }
+
+    .detail-desc {
+        text-align: center;
+        font-size: 0.9rem;
+        justify-content: center;
+        transform: translateX(16%);
+    }
+}
