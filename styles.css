@@ -1035,6 +1035,11 @@ header {
         width: 90%;
     } 
 
+    .nav img {
+        width: 150%;
+        transform: translateX(-13px);
+    }
+
     .home-text {
         margin: auto;
         width: 100%;
